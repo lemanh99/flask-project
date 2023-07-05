@@ -1,13 +1,14 @@
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 
-from app.apis.config import settings
+from app.apis.config.settings import settings
 from app.apis.containers import AppContainer
 from app.apis.routers import get_app_router
 
 
 def create_app(container: AppContainer = AppContainer()) -> FastAPI:
     app = FastAPI(
+        title="My project",
         docs_url="/",
     )
     app.container = container

@@ -11,6 +11,9 @@ dependency-injector = "^4.41.0"
 python-dotenv = "^1.0.0"
 redbird = "^0.7.1"
 uvicorn = "^0.22.0"
+SQLAlchemy = "^2.0.17"
+alembic = "^1.11.1"
+pymysql = "^1.1.0"
 
 [tool.poetry.dev-dependencies]
 
